@@ -1,0 +1,9 @@
+capacity = float(input("Solar capacity (kW): "))
+hours = float(input("Sunlight hours per day: "))
+efficiency = float(input("Efficiency (%): "))
+
+daily = capacity * hours * efficiency / 100
+monthly = daily * 30
+
+print("Daily generation:", round(daily, 2), "kWh")
+print("Monthly generation:", round(monthly, 2), "kWh")
